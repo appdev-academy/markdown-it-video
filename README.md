@@ -1,8 +1,6 @@
-# markdown-it-video
+# markdown-it-youtube-vimeo
 
-> markdown-it plugin for embedding hosted videos.
-
-[![Build Status](https://travis-ci.org/brianjgeiger/markdown-it-video.svg?branch=master)](https://travis-ci.org/brianjgeiger/markdown-it-video)
+> markdown-it plugin for embedding videos hosted on YouTube and Vimeo.
 
 ## Usage
 
@@ -71,56 +69,4 @@ Alternately, you could use the url instead of just the video id.
 ```md
 @[vimeo](https://vimeo.com/19706846)
 @[vimeo](https://player.vimeo.com/video/19706846)
-```
-
-#### Vine
-
-This only works in the inline style.
-
-```md
-@[vine](etVpwB7uHlw)
-```
-
-is interpreted as
-
-```html
-<p><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" id="vineplayer" type="text/html" width="600" height="600"
-  src="//vine.co/v/etVpwB7uHlw/embed/simple"
-  frameborder="0"/></div></p>
-```
-
-Alternately, you could use the url, or even the whole embed tag instead of just the video id.
-
-```md
-@[vine](https://vine.co/v/etVpwB7uHlw/embed/simple)
-@[vine](https://vine.co/v/etVpwB7uHlw/embed/postcard?audio=1)
-@[vine](<iframe src="https://vine.co/v/etVpwB7uHlw/embed/simple?audio=1" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>)
-```
-
-#### Prezi
-
-This only works in the inline style.
-
-```md
-@[prezi](1kkxdtlp4241)
-```
-
-is interpreted as 
-
-```html
-<p><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" id="preziplayer" type="text/html" width="550" height="400" src="https://prezi.com/embed/1kkxdtlp4241/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI5N1lQVHkxSHFxazZ0UUNCRHloSXZROHh3PT0&amp;landing_sign=1kD6c0N6aYpMUS0wxnQjxzSqZlEB8qNFdxtdjYhwSuI" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></p>
-```
-
-Alternately, you could use the url.
-
-```md
-@[prezi](https://prezi.com/1kkxdtlp4241/valentines-day/)
-@[prezi](https://prezi.com/e3g83t83nw03/destination-prezi-template/)
-@[prezi](https://prezi.com/prg6t46qgzik/anatomy-of-a-social-powered-customer-service-win/)
-```
-
-## Options
-
-```js
-
 ```
